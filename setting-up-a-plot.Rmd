@@ -6,7 +6,23 @@ output:
     fig_caption: true
 ---
 
+We will explore building a graphic up from the key parts:
 
+1. Creating a new plot with `plot.new()`
+
+2. Setting up the plotting window with `plot.window()`. 
+
+3. Creating plot margins.
+
+4. Creating axes.
+
+5. Adding axes labels.
+
+## Background
+
+```{R}
+par(bg='#333333')
+```
 
 
 

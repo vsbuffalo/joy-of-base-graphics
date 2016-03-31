@@ -28,6 +28,8 @@ par(opar)
 
 # bty
 
+**mnemonic**: **B**ox **TY**pe
+
 ```{r echo=FALSE}
 opar <- par(no.readonly=TRUE)
 ```
