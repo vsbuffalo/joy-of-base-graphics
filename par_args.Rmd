@@ -1,0 +1,60 @@
+---
+title: "Par"
+author: "Sean Kross"
+date: "March 31, 2016"
+output: html_document
+---
+
+# bg
+
+```{r echo=FALSE}
+opar <- par(no.readonly=TRUE)
+```
+
+```{r}
+par(bg = "blue")
+plot(1:10)
+
+par(bg = "#F0F0F0")
+plot(1:10)
+
+par(bg = "#DCE6EC")
+plot(1:10)
+```
+
+```{r echo=FALSE}
+par(opar)
+```
+
+# bty
+
+```{r echo=FALSE}
+opar <- par(no.readonly=TRUE)
+```
+
+```{r}
+par(bty = "o")
+plot(1:10)
+
+par(bty = "l")
+plot(1:10)
+
+par(bty = "7")
+plot(1:10)
+
+par(bty = "c")
+plot(1:10)
+
+par(bty = "u")
+plot(1:10)
+
+par(bty = "]")
+plot(1:10)
+
+par(bty = "n")
+plot(1:10)
+```
+
+```{r echo=FALSE}
+par(opar)
+```
