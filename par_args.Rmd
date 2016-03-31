@@ -1,25 +1,33 @@
 ---
 title: "Par"
-author: "Sean Kross"
 date: "March 31, 2016"
 output: html_document
 ---
 
 # bg
 
+### Description:
+
+"The color to be used for the background."
+
+### Mnemonic: 
+
+**B**ack**G**round
+
 ```{r echo=FALSE}
+set.seed(3-31-2016)
 opar <- par(no.readonly=TRUE)
 ```
 
 ```{r}
 par(bg = "blue")
-plot(1:10)
+plot(rnorm(100))
 
 par(bg = "#F0F0F0")
-plot(1:10)
+plot(rnorm(100))
 
 par(bg = "#DCE6EC")
-plot(1:10)
+plot(rnorm(100))
 ```
 
 ```{r echo=FALSE}
@@ -28,33 +36,150 @@ par(opar)
 
 # bty
 
-**mnemonic**: **B**ox **TY**pe
+### Description:
 
-```{r echo=FALSE}
-opar <- par(no.readonly=TRUE)
-```
+"A string which determines the type of box which is drawn around plots."
+
+### Mnemonic: 
+
+**B**ox **TY**pe
 
 ```{r}
 par(bty = "o")
-plot(1:10)
+plot(rnorm(100))
+
 
 par(bty = "l")
-plot(1:10)
+plot(rnorm(100))
 
 par(bty = "7")
-plot(1:10)
+plot(rnorm(100))
 
 par(bty = "c")
-plot(1:10)
+plot(rnorm(100))
 
 par(bty = "u")
-plot(1:10)
+plot(rnorm(100))
 
 par(bty = "]")
-plot(1:10)
+plot(rnorm(100))
 
 par(bty = "n")
-plot(1:10)
+plot(rnorm(100))
+```
+
+```{r echo=FALSE}
+par(opar)
+```
+
+# cex
+
+### Description:
+
+"A number specifiying the amount by which plotting text and symbols should be magnified."
+
+### Mnemonic: 
+
+**C**haracter **EX**pansion
+
+```{r}
+par(cex = 2)
+plot(rnorm(100))
+
+par(cex = .5)
+plot(rnorm(100))
+```
+
+```{r echo=FALSE}
+par(opar)
+```
+
+# cex.axis
+
+### Description:
+
+"A number specifiying the amount by which plotting text and symbols should be magnified."
+
+### Mnemonic: 
+
+**C**haracter **EX**pansion
+
+```{r}
+par(cex = 1, cex.axis = 0.5)
+plot(rnorm(100))
+
+par(cex = 1, cex.axis = 2)
+plot(rnorm(100))
+```
+
+```{r echo=FALSE}
+par(opar)
+```
+
+# cex.main
+
+```{r}
+par(cex = 1, cex.main = 0.5)
+plot(rnorm(100))
+
+par(cex = 1, cex.main = 2)
+plot(rnorm(100))
+```
+
+```{r echo=FALSE}
+par(opar)
+```
+
+# family
+
+### Description:
+
+"The name of a font family for drawing text."
+
+```{r}
+par(family = "mono")
+plot(rnorm(100))
+
+par(family = "serif")
+plot(rnorm(100))
+```
+
+```{r echo=FALSE}
+par(opar)
+```
+
+# fg
+
+### Description:
+
+"The color to be used for the foreground of plots."
+
+### Mnemonic: 
+
+**F**ore**G**round
+
+```{r}
+par(fg = "red")
+plot(rnorm(100))
+```
+
+```{r echo=FALSE}
+par(opar)
+```
+
+# fg
+
+### Description:
+
+"The color to be used for the foreground of plots."
+
+### Mnemonic: 
+
+**F**ore**G**round
+
+```{r}
+par(fg = "red")
+plot(rnorm(100))
 ```
 
 ```{r echo=FALSE}
